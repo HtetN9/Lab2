@@ -4,7 +4,7 @@ def display_main_menu():
 def get_user_input():
      x = input ()
      y = x.split(", ")
-     float_list = [float(y.strip())]
+     float_list = [float(y.strip()) for x in y]
      return float_list
 
 def find_min_max():
