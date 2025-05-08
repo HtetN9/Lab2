@@ -10,11 +10,11 @@ def calculate_bmi(height, weight):
 
     # Determine weight classification
     if bmi < 18.5:
-        classification = "Under Weight"
+        classification = "-1"
     elif bmi <= 25.0:
-        classification = "Normal Weight"
+        classification = "0"
     else:
-        classification = "Over Weight"
+        classification = "1"
 
     # Display classification
     print("Weight Classification = " + classification)
