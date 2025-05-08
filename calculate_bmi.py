@@ -11,13 +11,15 @@ def calculate_bmi(height, weight):
     # Determine weight classification
     if bmi < 18.5:
         classification = "-1"
+  
     elif bmi <= 25.0:
         classification = "0"
+  
     else:
         classification = "1"
-
     # Display classification
     print("Weight Classification = " + classification)
-
+    return round(bmi, 2), classification
 # Example usage
 calculate_bmi(weight=57, height=1.73)
+
